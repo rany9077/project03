@@ -3,14 +3,14 @@
     display: none;
   }
   &-button {
-    background-color: $color-white;
+    background-color: $color-black-bg;
     width: 7rem;
     height: 6rem;
     position: fixed;
     z-index: 2000;
     cursor: pointer;
     border-radius: 2px;
-    box-shadow: 0 1rem 1rem rgba(#000, 0.1);
+    box-shadow: 0 1rem 1rem rgba(#000, 0.2);
     text-align: center;
     right: 8rem;
     top: 7rem;
@@ -50,7 +50,7 @@
     &::after {
       width: 3rem;
       height: 2px;
-      background: #333;
+      background: $color-white;
       display: inline-block;
     }
   }

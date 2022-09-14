@@ -1,15 +1,103 @@
-.btn-text {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: $color-white;
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: 1px solid $color-white;
-  transition: all 0.5s;
-  &:hover {
+.scroll {
+  width: 60px;
+  height: 60px;
+  border: 2px solid $color-grey-font;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3%;
+  right: 50%;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid $color-grey-font;
+    border-bottom: 2px solid $color-grey-font;
+    transform: rotate(-45deg);
+  }
+}
+.more_btn1 {
+  width: 280px;
+  height: 70px;
+  border: 1px solid $color-white;
+  position: absolute;
+  bottom: 10rem;
+  left: 24rem;
+  cursor: pointer;
+  a {
     color: $color-white;
-    background-color: $color-black-bg;
-    border-bottom: 1px solid transparent;
+    font-size: 1.8rem;
+    text-decoration: none;
+    line-height: 6.5rem;
+    padding-left: 3rem;
+  }
+  &:hover {
+    box-shadow: 1px 1px $color-white, 2px 2px $color-white, 3px 3px $color-white;
+    transform: translateX(-3px);
+  }
+  a:after {
+    content: "→";
+    position: absolute;
+    right: 35px;
+    bottom: 0;
+    display: block;
+    font-size: 3rem;
+  }
+}
+.more_btn2 {
+  width: 280px;
+  height: 70px;
+  border: 1px solid $color-black-bg;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 30px;
+  &:hover {
+    box-shadow: 1px 1px $color-black-bg, 2px 2px $color-black-bg, 3px 3px $color-black-bg;
+    transform: translateX(-3px);
+  }
+  a {
+    color: $color-black-font;
+    font-size: 1.8rem;
+    text-decoration: none;
+    line-height: 6.5rem;
+    padding-left: 3rem;
+  }
+  a:after {
+    content: "→";
+    position: absolute;
+    right: 35px;
+    bottom: 0;
+    display: block;
+    font-size: 3rem;
+  }
+}
+.footer_btn {
+  position: relative;
+  width: 350px;
+  height: 70px;
+  border: 1px solid $color-white;
+  cursor: pointer;
+  a {
+    color: $color-white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    line-height: 6.5rem;
+    padding-left: 6rem;
+  }
+  a::before {
+    content: "←";
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    display: block;
+    font-size: 4rem;
+  }
+  &:hover {
+    box-shadow: 1px 1px $color-white, 2px 2px $color-white, 3px 3px $color-white;
+    transform: translateX(-3px);
   }
 }

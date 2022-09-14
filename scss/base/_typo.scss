@@ -1,21 +1,27 @@
 h2 {
   padding: 1rem 0;
-  font-size: 2.4rem;
+  font-size: 7rem;
   text-transform: uppercase;
+  letter-spacing: 8px;
+  position: relative;
   font-weight: 800;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   transition: all 0.5s;
-
-  &:hover {
-    padding-left: 1.5rem;
-  }
 }
 
 h3 {
   padding: 0.5rem 0;
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 300;
   text-transform: uppercase;
+}
+dt {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+}
+dd {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: $color-grey-font;
+  letter-spacing: 0.02rem;
 }

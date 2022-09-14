@@ -1,3 +1,26 @@
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0.1;
@@ -22,5 +45,24 @@
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+@keyframes animText {
+  0%,
+  90%,
+  100% {
+    width: 0px;
+  }
+  30%,
+  60% {
+    width: 500px;
+  }
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
   }
 }

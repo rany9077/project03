@@ -30,11 +30,12 @@ main {
         animation: animText 7s steps(17) infinite;
         -webkit-background-clip: text;
         overflow: hidden;
+        line-height: 80px;
       }
     }
     h3 {
       position: absolute;
-      top: 25%;
+      top: 28%;
       display: block;
     }
     &-video {

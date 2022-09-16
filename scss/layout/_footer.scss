@@ -1,4 +1,5 @@
 footer {
+  position: relative;
   padding: 5rem 0;
   background-color: $color-black-bg;
   color: $color-white;
@@ -19,6 +20,10 @@ footer {
     }
   }
   .footer_title {
+    width: 300px;
+    margin: 0 auto;
+  }
+  h3 {
     letter-spacing: 0.1rem;
     text-align: center;
     font-size: 5rem;

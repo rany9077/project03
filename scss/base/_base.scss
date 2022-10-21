@@ -9,6 +9,8 @@
 html {
   //rem
   font-size: 62.5%; // 1.5rem 10px *1.5
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 body {
   font-family: "Noto Sans", sans-serif;

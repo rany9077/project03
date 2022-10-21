@@ -82,6 +82,9 @@
     transform: translate(0, -50%);
     list-style: none;
     width: 100%;
+    @include mq("small-screen-3") {
+      left: 15%;
+    }
   }
   &-link {
     display: inline-block;
@@ -107,10 +110,20 @@
       left: -9%;
       top: 50%;
       background-color: $color-black-bg;
+      @include mq("small-screen-3") {
+        width: 15px;
+        height: 2px;
+      }
     }
     span {
       display: inline-block;
       margin-right: 1.5rem;
+    }
+    @include mq("small-screen-2") {
+      font-size: 3rem;
+    }
+    @include mq("small-screen-3") {
+      font-size: 2rem;
     }
   }
   &-checkbox:checked ~ &-body {

@@ -11,17 +11,14 @@ main {
     float: left;
     @include clearfix();
     @include mq("small-screen-1") {
-      width: 100%;
+      margin: 0 5rem;
     }
     @include mq("small-screen-2") {
-      width: 100%;
-      height: 54rem;
-      padding: 7rem 6rem 6.5rem 6rem;
+      margin: -5rem 5rem;
     }
     @include mq("small-screen-3") {
       width: 100%;
-      height: 60rem;
-      padding: 7rem 6rem 6.5rem 6rem;
+      margin: -5rem 2.5rem;
     }
     .main_title {
       position: relative;
@@ -31,37 +28,86 @@ main {
         -webkit-background-clip: text;
         overflow: hidden;
         line-height: 80px;
+        @include mq("small-screen-1") {
+          font-size: 6rem;
+        }
+        @include mq("small-screen-2") {
+          font-size: 4rem;
+        }
+        @include mq("small-screen-3") {
+          font-size: 3.5rem;
+          line-height: 7rem;
+        }
       }
     }
     h3 {
       position: absolute;
       top: 28%;
       display: block;
+      @include mq("small-screen-2") {
+        font-size: 2.5rem;
+        top: 22%;
+      }
+      @include mq("small-screen-3") {
+        font-size: 2.5rem;
+        top: 22%;
+      }
     }
     &-video {
       position: absolute;
-      top: 40%;
+      top: 36%;
     }
     &-video iframe {
       width: 800px;
       height: 500px;
+      @include mq("small-screen-1") {
+        width: 400px;
+        height: 250px;
+      }
+      @include mq("small-screen-2") {
+        width: 400px;
+        height: 250px;
+      }
+      @include mq("small-screen-3") {
+        width: 350px;
+        height: 200px;
+      }
     }
   }
 }
 
 .section-text {
-  float: left;
+  float: right;
   margin: 425px 0;
+
   @include mq("small-screen-1") {
     width: 100%;
+    position: absolute;
+    top: -10%;
+    right: -55%;
   }
   @include mq("small-screen-2") {
-    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 8%;
   }
   @include mq("small-screen-3") {
-    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 8%;
   }
   p {
     font-size: 1.8rem;
+    @include mq("small-screen-1") {
+      font-size: 1.6rem;
+    }
+    @include mq("small-screen-2") {
+      width: 100%;
+      font-size: 1.6rem;
+    }
+    @include mq("small-screen-3") {
+      width: 100%;
+      font-size: 1.4rem;
+    }
   }
 }

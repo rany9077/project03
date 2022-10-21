@@ -8,6 +8,10 @@
   right: 50%;
   animation: down 1.5s infinite;
   -webkit-animation: down 1.5s infinite;
+  @include mq("small-screen-3") {
+    width: 40px;
+    height: 40px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -18,6 +22,12 @@
     border-left: 2px solid $color-grey-font;
     border-bottom: 2px solid $color-grey-font;
     transform: rotate(-45deg);
+    @include mq("small-screen-3") {
+      top: 10px;
+      left: 12px;
+      width: 10px;
+      height: 10px;
+    }
   }
 }
 .more_btn1 {
@@ -28,13 +38,44 @@
   bottom: 10rem;
   left: 24rem;
   cursor: pointer;
+  z-index: 999;
+  @include mq("small-screen-1") {
+    width: 200px;
+    height: 60px;
+  }
+  @include mq("small-screen-2") {
+    width: 200px;
+    height: 60px;
+    bottom: 3rem;
+    left: 40rem;
+  }
+  @include mq("small-screen-3") {
+    width: 120px;
+    height: 40px;
+    bottom: 2.5rem;
+    left: 22rem;
+  }
   a {
     color: $color-white;
     font-size: 1.8rem;
     text-decoration: none;
     line-height: 6.5rem;
     padding-left: 3rem;
+    @include mq("small-screen-1") {
+      font-size: 1.6rem;
+      line-height: 5.5rem;
+    }
+    @include mq("small-screen-2") {
+      font-size: 1.6rem;
+      line-height: 5.5rem;
+    }
+    @include mq("small-screen-3") {
+      padding-left: 1.8rem;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
   }
+
   &:hover {
     box-shadow: 1px 1px $color-white, 2px 2px $color-white, 3px 3px $color-white;
     transform: translateX(-3px);
@@ -55,6 +96,21 @@
   position: absolute;
   cursor: pointer;
   margin-top: 30px;
+  @include mq("small-screen-1") {
+    width: 200px;
+    height: 60px;
+  }
+  @include mq("small-screen-2") {
+    width: 200px;
+    height: 60px;
+    bottom: -45%;
+  }
+  @include mq("small-screen-3") {
+    width: 120px;
+    height: 40px;
+    bottom: -7rem;
+    left: 10rem;
+  }
   &:hover {
     box-shadow: 1px 1px $color-black-bg, 2px 2px $color-black-bg, 3px 3px $color-black-bg;
     transform: translateX(-3px);
@@ -65,6 +121,19 @@
     text-decoration: none;
     line-height: 6.5rem;
     padding-left: 3rem;
+    @include mq("small-screen-1") {
+      font-size: 1.6rem;
+      line-height: 5.5rem;
+    }
+    @include mq("small-screen-2") {
+      font-size: 1.6rem;
+      line-height: 5.5rem;
+    }
+    @include mq("small-screen-3") {
+      padding-left: 1.8rem;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
   }
   a:after {
     content: "→";
@@ -81,12 +150,19 @@
   height: 70px;
   border: 1px solid $color-white;
   cursor: pointer;
+  @include mq("small-screen-3") {
+    width: 300px;
+    height: 70px;
+  }
   a {
     color: $color-white;
     font-size: 1.8rem;
     text-decoration: none;
     line-height: 6.5rem;
     padding-left: 6rem;
+    @include mq("small-screen-3") {
+      font-size: 1.6rem;
+    }
   }
   a::before {
     content: "←";

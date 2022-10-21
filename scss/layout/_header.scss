@@ -11,7 +11,19 @@ header {
     color: $color-white;
     letter-spacing: -0.1rem;
     font-weight: 900;
+    z-index: 800;
+    @include mq("small-screen-1") {
+      width: 100%;
+    }
+    @include mq("small-screen-2") {
+      width: 100%;
+    }
+    @include mq("small-screen-3") {
+      width: 100%;
+      top: 20%;
+    }
     &-main {
+      letter-spacing: 1rem;
       font-size: 10rem;
       line-height: 11rem;
       -webkit-background-clip: text;
@@ -20,6 +32,17 @@ header {
       animation-iteration-count: infinite;
       animation-delay: 2s;
       animation-fill-mode: backwards;
+      @include mq("small-screen-1") {
+        font-size: 6rem;
+        letter-spacing: 1rem;
+      }
+      @include mq("small-screen-2") {
+        font-size: 4rem;
+      }
+      @include mq("small-screen-3") {
+        font-size: 3.5rem;
+        line-height: 7rem;
+      }
     }
     &-main span {
       padding: 70px;
@@ -31,6 +54,24 @@ header {
       line-height: 3rem;
       font-weight: 400;
       letter-spacing: 0.01rem;
+      @include mq("small-screen-1") {
+        font-size: 1.6rem;
+        width: 400px;
+        line-height: 2rem;
+        margin-top: 1rem;
+      }
+      @include mq("small-screen-2") {
+        font-size: 1.6rem;
+        width: 500px;
+        text-align: justify;
+      }
+      @include mq("small-screen-3") {
+        font-size: 1.4rem;
+        width: 350px;
+        margin: 2rem -1rem;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+      }
     }
     &-sub p {
       margin-top: 30px;
@@ -40,5 +81,25 @@ header {
     position: absolute;
     top: 8%;
     right: 12.5%;
+  }
+  .header-img img {
+    @include mq("small-screen-1") {
+      width: 67%;
+      float: right;
+      margin-top: 8rem;
+      opacity: 0.7;
+    }
+    @include mq("small-screen-2") {
+      width: 67%;
+      float: right;
+      margin-top: 8rem;
+      opacity: 0.7;
+    }
+    @include mq("small-screen-3") {
+      width: 67%;
+      float: right;
+      margin-top: 8rem;
+      opacity: 0.7;
+    }
   }
 }

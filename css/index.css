@@ -538,19 +538,8 @@ header .header-text {
   font-weight: 900;
   z-index: 800;
 }
-@media screen and (min-width: 900px) and (max-width: 1200px) {
-  header .header-text {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 701px) and (max-width: 899px) {
-  header .header-text {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 700px) {
   header .header-text {
-    width: 100%;
     top: 20%;
   }
 }
@@ -648,10 +637,10 @@ header .header-img {
 }
 @media screen and (max-width: 700px) {
   header .header-img img {
-    width: 67%;
+    width: 50%;
     float: right;
-    margin-top: 8rem;
-    opacity: 0.7;
+    margin-top: 10rem;
+    opacity: 0.5;
   }
 }
 
@@ -689,8 +678,7 @@ main .section-about::after {
 }
 @media screen and (max-width: 700px) {
   main .section-about {
-    width: 100%;
-    margin: -5rem 2.5rem;
+    margin: -5rem 1.5rem;
   }
 }
 main .section-about .main_title {
@@ -770,7 +758,6 @@ main .section-about-video iframe {
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   .section-text {
-    width: 100%;
     position: absolute;
     top: -10%;
     right: -55%;
@@ -787,7 +774,7 @@ main .section-about-video iframe {
   .section-text {
     position: absolute;
     top: 15%;
-    left: 8%;
+    left: 5%;
   }
 }
 .section-text p {
@@ -800,14 +787,13 @@ main .section-about-video iframe {
 }
 @media screen and (min-width: 701px) and (max-width: 899px) {
   .section-text p {
-    width: 100%;
     font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 700px) {
   .section-text p {
-    width: 100%;
     font-size: 1.4rem;
+    width: 350px;
   }
 }
 
@@ -816,11 +802,6 @@ footer {
   padding: 5rem 0;
   background-color: #000;
   color: #fff;
-}
-@media screen and (max-width: 700px) {
-  footer {
-    padding: 9rem 2rem 3rem 7rem;
-  }
 }
 footer::after {
   content: "";
@@ -833,12 +814,6 @@ footer .logo-text-footer {
   font-weight: 400;
   text-transform: uppercase;
   float: left;
-}
-@media screen and (max-width: 700px) {
-  footer .logo-text-footer {
-    margin-right: 6rem;
-    width: 20%;
-  }
 }
 footer .footer_title {
   width: 300px;
@@ -876,6 +851,7 @@ footer .left {
   footer .left {
     padding: 1rem 0;
     border-right: none;
+    float: none;
   }
 }
 footer .right {
@@ -893,6 +869,7 @@ footer .right {
     padding: 1rem 0;
     border-left: none;
     border-top: 1px solid #999;
+    float: none;
   }
 }
 footer .sns {

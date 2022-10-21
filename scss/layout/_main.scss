@@ -17,8 +17,7 @@ main {
       margin: -5rem 5rem;
     }
     @include mq("small-screen-3") {
-      width: 100%;
-      margin: -5rem 2.5rem;
+      margin: -5rem 1.5rem;
     }
     .main_title {
       position: relative;
@@ -81,7 +80,6 @@ main {
   margin: 425px 0;
 
   @include mq("small-screen-1") {
-    width: 100%;
     position: absolute;
     top: -10%;
     right: -55%;
@@ -94,7 +92,7 @@ main {
   @include mq("small-screen-3") {
     position: absolute;
     top: 15%;
-    left: 8%;
+    left: 5%;
   }
   p {
     font-size: 1.8rem;
@@ -102,12 +100,11 @@ main {
       font-size: 1.6rem;
     }
     @include mq("small-screen-2") {
-      width: 100%;
       font-size: 1.6rem;
     }
     @include mq("small-screen-3") {
-      width: 100%;
       font-size: 1.4rem;
+      width: 350px;
     }
   }
 }

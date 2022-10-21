@@ -3,9 +3,6 @@ footer {
   padding: 5rem 0;
   background-color: $color-black-bg;
   color: $color-white;
-  @include mq("small-screen-3") {
-    padding: 9rem 2rem 3rem 7rem;
-  }
   @include clearfix();
   .logo-text-footer {
     width: 25%;
@@ -13,11 +10,6 @@ footer {
     font-weight: 400;
     text-transform: uppercase;
     float: left;
-
-    @include mq("small-screen-3") {
-      margin-right: 6rem;
-      width: 20%;
-    }
   }
   .footer_title {
     width: 300px;
@@ -53,6 +45,7 @@ footer {
     @include mq("small-screen-3") {
       padding: 1rem 0;
       border-right: none;
+      float: none;
     }
   }
   .right {
@@ -66,6 +59,7 @@ footer {
       padding: 1rem 0;
       border-left: none;
       border-top: 1px solid $color-grey-font;
+      float: none;
     }
   }
   .sns {
